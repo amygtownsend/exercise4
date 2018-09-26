@@ -1,0 +1,53 @@
+body {
+  background-color: #ddd;
+}
+
+#offscreen-nav ul {
+  list-style-type: none;
+  font-size: 2em;
+  padding: 5%;
+}
+
+#offscreen-nav {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  overflow: hidden;
+}
+
+#close-btn {
+  float: right;
+  padding: 5px;
+}
+
+#more-info {
+  color: red;
+}
+
+#tooltip {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px 2px gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#tooltip::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  top: -10px;
+}
